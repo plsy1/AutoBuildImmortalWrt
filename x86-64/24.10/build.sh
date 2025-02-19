@@ -21,16 +21,25 @@ cat /home/build/immortalwrt/files/etc/config/pppoe-settings
 echo "$(date '+%Y-%m-%d %H:%M:%S') - 开始编译..."
 
 
-
 # 定义所需安装的包列表 下列插件你都可以自行删减
 PACKAGES="$PACKAGES curl"
+PACKAGES="$PACKAGES ddns-scripts-cloudflare"
+PACKAGES="$PACKAGES drill"
 PACKAGES="$PACKAGES luci-app-ddns"
 PACKAGES="$PACKAGES luci-app-openclash"
+PACKAGES="$PACKAGES luci-app-samba4"
 PACKAGES="$PACKAGES luci-app-smartdns"
 PACKAGES="$PACKAGES luci-app-udpxy"
-PACKAGES="$PACKAGES luci-app-samba4"
-PACKAGES="$PACKAGES ddns-scripts-cloudflare"
+PACKAGES="$PACKAGES luci-i18n-base-zh-cn"	
+PACKAGES="$PACKAGES luci-i18n-ddns-zh-cn"	
+PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"	
+PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"	
+PACKAGES="$PACKAGES luci-i18n-smartdns-zh-cn"	
+PACKAGES="$PACKAGES luci-i18n-udpxy-zh-cn"
 PACKAGES="$PACKAGES luci-theme-argon"
+PACKAGES="$PACKAGES wget-ssl"
+
 
 # PACKAGES="$PACKAGES "
 
