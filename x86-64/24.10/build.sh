@@ -30,6 +30,7 @@ PACKAGES="$PACKAGES luci-app-smartdns"
 PACKAGES="$PACKAGES luci-app-udpxy"
 PACKAGES="$PACKAGES luci-app-samba4"
 PACKAGES="$PACKAGES ddns-scripts-cloudflare"
+PACKAGES="$PACKAGES luci-theme-argon"
 
 # PACKAGES="$PACKAGES "
 
